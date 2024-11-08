@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página de Wikipedia</title>
+    <style>
+        /* Resetando margens e paddings para todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo o layout do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #005fa3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Layout de conteúdo */
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* Barra lateral */
+        .sidebar {
+            width: 200px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #005fa3;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        /* Área principal de conteúdo */
+        .main-content {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #005fa3;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wikipedia - Exemplo de Página</h1>
+</header>
+
+<div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <h3>Conteúdo Principal</h3>
+        <a href="#">Introdução</a>
+        <a href="#">História</a>
+        <a href="#">Características</a>
+        <a href="#">Galeria</a>
+        <a href="#">Referências</a>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <h2>O que é um Exemplo de Página?</h2>
+        <p>Este é um exemplo de como criar uma página de estilo Wikipedia com layout moderno utilizando apenas HTML e CSS. O conteúdo da página pode ser ampliado com informações e imagens conforme necessário.</p>
+
+        <h3>História</h3>
+        <p>O exemplo de página que você está visualizando foi desenvolvido para demonstrar como pode ser organizado um layout moderno e responsivo utilizando HTML básico e CSS. Este tipo de estrutura é amplamente utilizada em páginas como a Wikipedia, mas aqui foi simplificado para facilitar a compreensão do processo.</p>
+
+        <h3>Características</h3>
+        <ul>
+            <li>Design simples e moderno</li>
+            <li>Fácil de navegar com uma barra lateral</li>
+            <li>Boa legibilidade e tipografia</li>
+            <li>Responsivo para telas pequenas</li>
+        </ul>
+
+        <h3>Referências</h3>
+        <p>Este layout foi inspirado na Wikipedia, mas é uma criação original com o objetivo de mostrar a simplicidade e eficácia do uso de HTML e CSS na construção de páginas da web.</p>
+    </main>
+</div>
+
+<footer>
+    <p>© 2024 Exemplo de Página | <a href="#">Sobre</a> | <a href="#">Contato</a> | <a href="#">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
